@@ -1,0 +1,397 @@
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	overflow-x: wrap;
+	overflow-y: visible;
+}
+@media screen and (min-width:800px) {
+
+	.page{
+		margin-bottom: 5%;
+	}
+	#page1 #back3 {
+		position: relative;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		object-fit: cover;
+		z-index: -2;
+	}
+	#page1 #shape1,#shape2,#shape3 {
+		z-index: -1;
+		position: absolute;
+		top: 0%;
+	}
+	#page1 #shape1{
+		position: absolute;
+		width: 7%;
+		transform: translate(-50%, -50%);
+		transition-duration: 0.5s;
+	}
+	#page1 #shape2{
+		position: absolute;
+		width: 8%;
+		top: 30%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+		transition-duration: 0.5s;
+	}
+	#page1 #shape3{
+		width: 4%;
+		top: 20%;
+		left: 15%;
+		transform: translate(-50%, -50%);
+		transition-duration: 0.5s;
+	}
+	#page1 #me{
+		display: inline;
+		z-index: 1;
+		position: absolute;
+		top: 15%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+		width: 25%;
+		border-radius: 100px;
+		background: #00c3ff;
+		transition: 0.3s;
+	}
+	#page1 #intro{
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		z-index: 1;
+		margin: auto;
+	}
+	#page1 #follow{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 1%;
+		left: 40%;
+		z-index: 1;
+	}
+	#page1 #follow a{
+		color: black;
+		transition: 0.35s;
+		margin-left: 5%;
+	}
+	#page1 #follow #github:hover{
+		color: grey;
+	}
+	#page1 #follow #linkedin:hover{
+		color: #0077b5;
+	}
+	#page1 #follow #facebook:hover{
+		color: 	#4267B2;
+	}
+	#page1 #follow #codepen:hover{
+		color: grey;
+	}
+	#page1 #hire #hireme{
+		z-index: 1;
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		padding: 14px 20px;
+		font-weight: bold;
+		font-size: 150%;
+		color: orange;
+		border: 1.5px solid orange;
+		transition: 0.25s;
+	}
+	#page2 #backpage2,#backpage3{
+		display: none;
+	}
+	#page3 #carousel {
+		box-shadow: 5px 10px 10px 5px grey;
+	}
+	.sub-page{
+		width: 100%;
+		background-color: #00c3ff;
+	}
+	.sub-page #projectLink{
+		padding: 40px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	.sub-page #projectLink a{
+		text-decoration: none;
+		color: white;
+		transition: 0.3s;
+	}
+	.sub-page #projectLink a:hover{
+		color: orange;
+		font-weight: 300%;
+	}
+	#page4 #input{
+		width: 60%;
+	}
+	#page4 input{
+		padding: 14px 20px;
+		border-radius: 4px;
+		border: 2px solid orange;
+		transition: 0.3s;
+		width: 80%;
+	}
+	#page4 textarea{
+		padding: 14px 20px;
+		border-radius: 4px;
+		border: 2px solid #0077b5;
+		transition: 0.3s;
+		width: 80%;
+	}
+	#page4 input:focus{
+		width: 100%;
+		border-radius: 24px;
+		border: 2px solid green;
+	}
+	#page4 textarea:focus{
+		width: 100%;
+		border-radius: 24px;
+		border: 2px solid yellow;
+	}
+	#page4 form #btn button{
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	#page4 #page-heading{
+		color: #0F9D58;
+	}
+	#page3 #page-heading{
+		color: #F4B400;
+	}
+	#page2 #page-heading{
+		color: #DB4437;
+	}
+	footer {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #00c3ff;
+		padding: 14px 28px;
+		color: white;
+	}
+	footer #follow a{
+		color: white;
+		transition: 0.35s;
+	}
+	footer #follow #github:hover{
+		color: grey;
+	}
+	footer #follow #linkedin:hover{
+		color: #0077b5;
+	}
+	footer #follow #facebook:hover{
+		color: 	#4267B2;
+	}
+	footer #follow #codepen:hover{
+		color: grey;
+	}
+}
+@media screen and (min-width: 1025px) {	
+	#back-images{
+		width: 100%;
+	}
+	.page {
+		width: 100%;
+		background: none;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		margin-bottom: 2%;
+	}
+	#page1 #back3 {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		object-fit: cover;
+		z-index: -2;
+	}
+	#page1 #shape1,#shape2,#shape3 {
+		z-index: -1;
+	}
+	#page1 #shape1{
+		position: absolute;
+		width: 7%;
+		top: 5%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+		transition-duration: 0.5s;
+	}
+	#page1 #shape2{
+		position: absolute;
+		width: 8%;
+		top: 60%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+		transition-duration: 0.5s;
+	}
+	#page1 #shape3{
+		position: absolute;
+		width: 4%;
+		top: 20%;
+		left: 15%;
+		transform: translate(-50%, -50%);
+		transition-duration: 0.5s;
+	}
+	#page1 #me{
+		z-index: 2;
+		position: absolute;
+		top: 40%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+		width: 25%;
+		border-radius: 100px;
+		background: #7c8081;
+		transition: 0.3s;
+	}
+	#page1 #talent{
+		display: inline;
+	}
+
+	#page1 #intro{
+		z-index: 1;
+		margin: auto;
+		padding: 80px;
+	}
+	#page1 #follow{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 70%;
+		left: 95%;
+		z-index: 1;
+	}
+	#page1 #follow a{
+		color: black;
+		transition: 0.35s;
+	}
+	#page1 #follow #github:hover{
+		color: grey;
+	}
+	#page1 #follow #linkedin:hover{
+		color: #0077b5;
+	}
+	#page1 #follow #facebook:hover{
+		color: 	#4267B2;
+	}
+	#page1 #follow #codepen:hover{
+		color: grey;
+	}
+	#page1 #hire #hireme{
+		z-index: 1;
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		padding: 14px 20px;
+		font-weight: bold;
+		font-size: 150%;
+		color: orange;
+		border: 1.5px solid orange;
+		transition: 0.25s;
+	}
+
+	#page2 #study,#study1{
+		width: 100%;
+	}
+	#page2 #backpage2{
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		object-fit: cover;
+		z-index: -1;
+	}
+	#page3 #backpage3{
+		position: absolute;
+		top: 200%;
+		width: 100%;
+		height: 100vh;
+		object-fit: cover;
+		z-index: -1;
+	}
+	#page3 #carousel {
+		box-shadow: 5px 10px 10px 5px grey;
+	}
+	.sub-page{
+		width: 100%;
+		height: auto;
+		background-color: #00c3ff;
+	}
+	.sub-page #projectLink{
+		padding: 40px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	.sub-page #projectLink a{
+		text-decoration: none;
+		color: white;
+		transition: 0.3s;
+	}
+	.sub-page #projectLink a:hover{
+		color: orange;
+		font-weight: 300%;
+	}
+	#page4 #input{
+		width: 60%;
+	}
+	#page4 input{
+		padding: 14px 20px;
+		border-radius: 4px;
+		border: 2px solid orange;
+		transition: 0.3s;
+		width: 80%;
+	}
+	#page4 textarea{
+		padding: 14px 20px;
+		border-radius: 4px;
+		border: 2px solid #0077b5;
+		transition: 0.3s;
+		width: 80%;
+	}
+	#page4 input:focus{
+		width: 100%;
+		border-radius: 24px;
+		border: 2px solid green;
+	}
+	#page4 textarea:focus{
+		width: 100%;
+		border-radius: 24px;
+		border: 2px solid yellow;
+	}
+	#page4 form #btn button{
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	footer {
+		width: 100%;
+		background-color: #00c3ff;
+		padding: 14px 28px;
+		font-size: 130%;
+		color: white;
+		display: flex;
+		flex-direction: column;
+	}
+	footer p{
+		margin:auto
+	}
+	footer #follow{
+		display: none;
+	}
+}
+

@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .page {
 	width: 100%;
@@ -15,16 +16,33 @@
     overflow-x: hidden;
 }
 #page0{
+    background-image: url('../../images/projectsimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
     flex-direction: column;
     color: black;
     margin: auto;
     background-color: snow;
     
 }
+#page0 #heading{
+    background-color: snow;
+    opacity: 0.8;
+    padding: 35px 14px;
+}
 #page0 p{
     color: orange;
 }
-#page0 span#down{
+#page0 li{
+    list-style-type:circle
+}
+#page0 li a{
+    text-decoration: none;
+    transition: 0.25s;
+}
+#page0 li a:hover{
+    color: darkgreen;
     font-weight: bolder;
 }
 #page1{
@@ -47,4 +65,15 @@
 }
 #page6{
     background-color: lightpink;
+}
+footer{
+    background-color: #DB4437;
+    padding: 14px 28px;
+    color: white;
+    font-size: 150%;
+    font-weight: lighter;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }

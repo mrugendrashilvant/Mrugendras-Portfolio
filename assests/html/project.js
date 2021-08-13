@@ -1,5 +1,5 @@
-let down = document.getElementById('page0');
-console.log(down);
+let arrow = document.getElementById('arrow');
+console.log(arrow)
 
 function changeColor(){
     let colors = ["lightblue", "lightyellow", "#2ECC71", "orange", "#00c3ff"];
